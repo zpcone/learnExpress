@@ -1,0 +1,19 @@
+<%- include('./header.ejs') %>
+
+<h1>体育新闻</h1>
+<h2><%= name %></h2>
+<hr>
+<ul>
+<%
+    for (var i=0; i<actions.length; i++){
+        var tempItem = actions[i];
+%>
+        <li>  <%= tempItem %>  </li>
+<%
+    }
+ %>
+</ul>
+
+
+
+<%- include('./footer.ejs') %>
